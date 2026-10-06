@@ -1,0 +1,15 @@
+[package]
+name = "conpty-assets"
+version = "0.1.1"
+edition = "2021"
+rust-version = "1.70"
+description = "Redistributable Microsoft ConPTY DLL and OpenConsole host as embedded byte slices"
+license = "MIT"
+repository = "https://github.com/aannoo/conpty-assets"
+readme = "README.md"
+keywords = ["windows", "conpty", "terminal", "pty"]
+categories = ["os::windows-apis"]
+include = ["src/**", "assets/x64/**", "Cargo.toml", "README.md", "LICENSE", "LICENSE-MICROSOFT", "upstream.json", "fetch.ps1"]
+
+[lib]
+path = "src/lib.rs"
