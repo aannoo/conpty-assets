@@ -43,7 +43,7 @@ Only maintainers building this crate from its source checkout need to run:
 
 ```powershell
 pwsh -NoProfile -File ./fetch.ps1
-cargo publish --dry-run
+cargo publish --dry-run --allow-dirty   # assets are git-ignored but packaged
 ```
 
 The script downloads the pinned NuGet package and verifies both extracted files
